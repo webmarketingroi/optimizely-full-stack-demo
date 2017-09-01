@@ -52,7 +52,7 @@ $identity = isset($_SESSION['identity'])?$_SESSION['identity']:null;
         </div><!--/.container-fluid -->
       </nav>
 
-          <h1>Thank's For Shopping!</h1>
+          <h1>Thanks For Your Purchase!</h1>
           <a class="btn btn-primary btn-lg" href="index.php">Back to Shop</a>
     </div>  
 

@@ -18,7 +18,7 @@ $datafile = file_get_contents('https://cdn.optimizely.com/json/7981220167.json')
 
 $optimizely = new Optimizely($datafile);
 
-$variationKey = $optimizely->activate('sample_experiment', $userId);
+$variationKey = $optimizely->activate('headline_test', $userId);
 ?>
 
 <!DOCTYPE html>
@@ -71,9 +71,9 @@ $variationKey = $optimizely->activate('sample_experiment', $userId);
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
         <?php if ($variationKey=='Variation'):  ?>
-        <h1 class="red-heading">Delicious Food at Cheap Price</h1>
+        <h1 class="red-heading">Delicious Cakes - Delivered Fresh!</h1>
         <?php else: ?>
-        <h1 class="blue-heading">Delicious Food at Cheap Price</h1>
+        <h1 class="black-heading">Cakes & Bread</h1>
         <?php endif; ?>
         <p>Amazing cakes just a click away!</p>
         <div class="cake-list">

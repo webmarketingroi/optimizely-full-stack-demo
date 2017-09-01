@@ -53,7 +53,7 @@ $identity = isset($_SESSION['identity'])?$_SESSION['identity']:null;
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1 class="blue-heading">Delicious Food at Cheap Price</h1>
+        <h1 class="black-heading">Cakes & Bread</h1>
         <p>Amazing cakes just a click away!</p>
         <div class="cake-list">
             <div class="cake">

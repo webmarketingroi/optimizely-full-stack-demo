@@ -10,7 +10,7 @@ $datafile = file_get_contents('https://cdn.optimizely.com/json/7981220167.json')
 
 $optimizely = new Optimizely($datafile);
 
-$variationKey = $optimizely->activate('sample_experiment', $userId);
+$variationKey = $optimizely->activate('headline_test', $userId);
 
 $eventTags = [
 	'productName' => $_GET['title'],
