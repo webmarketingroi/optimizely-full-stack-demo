@@ -19,8 +19,8 @@ $datafile = file_get_contents('https://cdn.optimizely.com/json/7981220167.json')
 
 $optimizely = new Optimizely($datafile);
 
-$optimizely->notificationCenter->addListener(NotificationType::ACTIVE, function($activateObject){
-    file_put_contents('/tmp/optimizely-fullstack-events.log', date('Y-m-d H:i:s) . " Activate event: ". json_encode($activateObject), FILE_APPEND);
+$optimizely->notificationCenter->addNotificationListener(NotificationType::ACTIVATE, function($activateObject){
+    file_put_contents('/tmp/optimizely-fullstack-events.log', date('Y-m-d H:i:s') . " Activate event: ". json_encode($activateObject) . "\n", FILE_APPEND);
 });
 
 $variationKey = $optimizely->activate('headline_test', $userId);
